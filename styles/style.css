@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+:root {
+    --color-main: #3B0000;
+    --color-secondary: #FF0000;
+    --color-tertiary: #FFFFFF;
+    --color-hover: #FFF6CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: var(--color-main);
+}
+
+.header{
+    background-color: var(--color-secondary);
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__titulo {
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.header__menu__item {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__menu__item:hover {
+    color: var(--color-hover);
+}
+
+.content__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content__items__game {
+    width: 33.3%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.content__items__game__image {
+    width: 100%;
+}
+
+.content__items__game__title {
+    color: var(--color-tertiary);
+    font-size: 20px;
+}
+
+.footer {
+    background-color: var(--color-secondary);
+    padding: 2% 3%;
+    text-align: center;
+}
+
+.footer__text {
+    color: var(--color-tertiary);
+    font-weight: 300;
+    font-size: 20px;
+}
